@@ -21,7 +21,7 @@ JWTService, finally a ResponseEntity is returned to the AuthController class wit
 the content "Login successful.".
 
 <picture>
-    <source media="(perfers-color-scheme: dark)" srcset="../Images/SignInLight.png">
-    <source media="(perfers-color-scheme: light)" srcset="../Images/SignInDark.png">
+    <source media="(prefers-color-scheme: dark)" srcset="../Images/SignInLight.png">
+    <source media="(prefers-color-scheme: light)" srcset="../Images/SignInDark.png">
     <img alt="Image Explanation" src="../Images/SignInLight.png">
 </picture>
