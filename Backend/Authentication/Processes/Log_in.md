@@ -8,8 +8,6 @@ will also be changed to present the most up-to-date version of the process.
 
 # Detailed Explanation
 
-## Request processing
-
 After a request with all the necessary information is made from the frontend using the url 
 https://betterproductivity/auth/login.com, the user sends the information to the AuthController. The information has to
 contain the users email and password as a JSON formatted string. The credentials are then sent to the AuthenticationService
@@ -21,3 +19,5 @@ JWT is created inside the JWTService class. In the JWTService class, using an RS
 given an expiration date of 2 weeks. After that it is added to a cookie by a method call made by AuthenticationService to
 JWTService, finally a ResponseEntity is returned to the AuthController class with a HTTPStatus of 200/OK and body with 
 the content "Login successful.".
+
+![Image explanation](../Images/Signin.png)
