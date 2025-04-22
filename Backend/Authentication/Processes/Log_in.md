@@ -20,4 +20,8 @@ given an expiration date of 2 weeks. After that it is added to a cookie by a met
 JWTService, finally a ResponseEntity is returned to the AuthController class with a HTTPStatus of 200/OK and body with 
 the content "Login successful.".
 
-![Image explanation](../Images/Signin.png)
+<picture>
+    <source media="(perfers-color-scheme: dark)" srcset="../Images/SignInLight.png">
+    <source media="(perfers-color-scheme: light)" srcset="../Images/SignInDark.png">
+    <img alt="Image Explanation" src="../Images/SignInLight.png">
+</picture>
