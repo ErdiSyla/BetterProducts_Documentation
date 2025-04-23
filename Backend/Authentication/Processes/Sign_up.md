@@ -17,3 +17,9 @@ the next part of validation is to check if a user with the same email already ex
 users with the same email. If a user with the same email is found then an UserAlreadyExistsException is throw. After it
 is asserted that a user with the same email does not exist the UserDTO is converted into an UserModel and saved. Finally,
 a ResponseEntity with the HTTPStatus code 201/Created and body with the content "User created successfully.".
+
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="../Images/SignUpDark.png">
+<source media="(prefers-color-scheme: light)" srcset="../Images/SignUpLight.png">
+<img alt="Sing-up Explanation" src="../Images/SignUpLight.png">
+</picture>
