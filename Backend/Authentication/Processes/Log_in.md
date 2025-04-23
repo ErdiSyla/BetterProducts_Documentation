@@ -9,8 +9,8 @@ will also be changed to present the most up-to-date version of the process.
 # Detailed Explanation
 
 After a request with all the necessary information is made from the frontend using the url 
-https://betterproductivity/auth/login.com, the user sends the information to the AuthController. The information has to
-contain the users email and password as a JSON formatted string. The credentials are then sent to the AuthenticationService
+https://betterproductivity/auth/login.com, the user sends the necessary information to AuthController. The information has to
+contain the user's email and password as a JSON formatted string. The credentials are then sent to the AuthenticationService
 class where further processing is done. In the AuthenticationService class, the first thing checked is if a user with the
 same email exists inside our databases. If no user with a matching email is found then a NoUserExistsException is thrown.
 If a user is found then the password provided by the user and the one inside our databases are checked if they match. If
