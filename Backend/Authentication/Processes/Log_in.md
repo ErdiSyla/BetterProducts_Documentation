@@ -23,5 +23,5 @@ the content "Login successful.".
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="../Images/SignInDark.png">
     <source media="(prefers-color-scheme: light)" srcset="../Images/SignInLight.png">
-    <img alt="Image Explanation" src="../Images/SignInLight.png">
+    <img alt="Log-in Explanation" src="../Images/SignInLight.png">
 </picture>
