@@ -10,6 +10,7 @@ requests and deliver an appropriate response. The BetterProducts backend contain
 - Customer service
 - Key service
 - Order service
+- Sale service
 - Storage service
 - Review service
 Other services that will be added after are:
