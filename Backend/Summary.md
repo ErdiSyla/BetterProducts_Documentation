@@ -21,18 +21,28 @@ Other services that will be added after are:
 
 ## Sale Process
 
-When a user/customer wants to put an item for sale there are many different actions that must be completed by the service
-to ensure that the item is put for sale:
-1. The user interacts with the frontend  and completes the form for putting an item for sale.
+To put an item for sale, a customer/user must first complete a process with a few number of steps using multiple services
+that ensure the item is put for sale:
+1. The user interacts with the frontend and completes the form for putting an item for sale.
 2. The request is then forwarded to an instance of the ApiGateway in the private backend network through an Ingress.
 3. The request is authenticated through JWT and CSRF token authentication and then routed to an instance of the Sale service
 4. The Sale service contacts the Storage service to add an item to the storage as it was just put for sale.                 
-5. After the item is added to the storage a notification is sent asynchronously to the user through their email to inform
-them they put the item on sale.
-With this all the work of the backend to put an item on sale is done.
+5. After the item is added to the storage a notification is sent asynchronously to the customer/user through their email 
+to inform them the sale was successful.
 
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="/Backend/Images/SaleDark.png">
     <source media="(prefers-color-scheme: light)" srcset="/Backend/Images/SaleLight.png">
     <img alt="Log-in Explanation" src="/Backend/Images/SaleLight.png">
 </picture>
+
+## Purchase Process
+
+To buy a product, a customer/user must first complete a process with a few numbers of steps using multiple services that
+ensure the item is purchased:
+1. The user interacts with the fronted and selects an item or items to purchase by adding them to their cart.
+2. The request is then forwarded to an instance of the ApiGateway in the private backend network through an Ingress.
+3. The request is authenticated through JWT and CSRF token authentication and then routed to an instance of the Order service.
+4. The Order service connects to the Storage service, completes the order and then contacts the Notification Service.
+5. After the item/s have been successfully purchased a notification is sent asynchronously to the customer/user through
+their email to inform them the purchase was successful.
